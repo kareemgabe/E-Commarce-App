@@ -1,0 +1,69 @@
+:root{
+  --main-color:#0aad0a;
+  --light-color:#f0f3f2;
+  --shadow:rgba(145,158,171,.2) 0px 2px 4px -1px,rgba(145,158,171,.14) 0px 4px 5px 0px,rgba(145,158,171,.12) 0px 1px 10px 0px;
+  --font-family:'Encode Sans Expanded', sans-serif;
+  --rating-color:#ffc908;
+}
+body{
+  font-family: var(--font-family) !important;
+}
+
+.mainColor{
+  color: var(--main-color);
+}
+.mainBg{
+    background-color: var(--main-color);
+}
+
+.cursor-pointer
+{
+    cursor: pointer;
+}
+.product{
+   position: relative; 
+   transition: all 0.5s;
+   border-radius:5px;
+}
+.product:hover
+{
+    box-shadow: var(--shadow);
+    border: solid 1px var(--main-color);
+
+}
+.font-sm
+{
+    font-size: 15px;
+}
+.font-md{
+    font-size:18px;
+}
+.text-main
+{
+    color: var(--main-color);
+}
+
+.product{
+  position: relative;
+}
+.disableButton{
+   position: absolute;
+   left: 10px;
+   bottom:-50px;
+  border: none ;
+   border-radius: 5px; 
+   background-color: #0aad0a;
+   padding:10px;
+   color:azure; 
+   width: 75%;
+    opacity:0;
+   transition: all 0.5s;
+}
+.favoriteItem{
+    position: absolute;
+    right:15px;
+}
+.product:hover .disableButton{
+   bottom:0px;
+ opacity: 1;
+}

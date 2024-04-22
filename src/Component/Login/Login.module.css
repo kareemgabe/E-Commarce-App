@@ -1,0 +1,6 @@
+.textMuted{
+    color: gray;
+}
+.textMuted:hover{
+    color: var(--main-color);
+}
